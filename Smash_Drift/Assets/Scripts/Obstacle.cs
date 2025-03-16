@@ -28,6 +28,7 @@ public class Obstacle : MonoBehaviour
         if (generator != null)
         {
             generator.ObstacleDestroyed(); // Notify the generator
+            gameObject.tag = "Untagged";
         }
         
     }
