@@ -18,7 +18,7 @@ public class ArrowPointer : MonoBehaviour
             Quaternion targetRotation = Quaternion.LookRotation(direction);
             
             // Set only the Y-axis dynamically while keeping X at 90° and Z at 0°
-            arrowTransform.rotation = Quaternion.Euler(90, targetRotation.eulerAngles.y, 0);
+            arrowTransform.rotation = Quaternion.Euler(0, targetRotation.eulerAngles.y, 0);
         }
     }
 
